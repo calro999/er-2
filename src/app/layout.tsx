@@ -60,7 +60,7 @@ export default function RootLayout({
             <nav className="flex items-center gap-5 text-xs font-bold text-slate-400">
               <a href="/" className="hover:text-purple-300 transition">Home</a>
               <span className="text-slate-600">/</span>
-              <a href="#" className="hover:text-rose-300 transition text-rose-500 border border-rose-500/30 px-2 py-1 rounded">姉妹サイト: 深夜書斎</a>
+              <a href="https://haitoku.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-rose-300 transition text-rose-500 border border-rose-500/30 px-2 py-1 rounded">姉妹サイト: 深夜書斎</a>
               <span className="text-slate-600">/</span>
               <span className="text-[10px] bg-purple-700 text-white font-black px-2 py-0.5 rounded">
                 R-18

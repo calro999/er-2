@@ -194,7 +194,7 @@ export default function Home() {
           <p className="mt-4 text-xs text-slate-400">読み込み中...</p>
         </div>
       ) : filteredPosts.length === 0 ? (
-        <div className="text-center py-20 border border-dashed border-slate-200 rounded-2xl bg-white">
+        <div className="text-center py-20 border border-dashed border-purple-900/50 rounded-2xl bg-slate-900">
           <p className="text-slate-400 text-xs">該当するレビュー記事はありません。</p>
         </div>
       ) : (
@@ -202,7 +202,7 @@ export default function Home() {
           {filteredPosts.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 card-hover-effect shadow-sm"
+              className="flex flex-col rounded-2xl overflow-hidden bg-slate-900 border border-purple-900/50 card-hover-effect shadow-sm"
             >
               {/* アイキャッチ画像 */}
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100 flex items-center justify-center border-b border-slate-200/60">

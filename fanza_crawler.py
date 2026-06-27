@@ -13,14 +13,15 @@ def clean_for_safety(text):
     if not text:
         return ""
     safety_map = {
-        "ネトラレ": "禁断 of 恋",
-        "ねとられ": "禁断 of 恋",
-        "不倫": "秘密 of 関係",
-        "団地妻": "人妻",
-        "人妻": "大人の女性",
-        "背徳": "秘密 of",
-        "痴女": "魅力的な女性",
-        "中出し": "愛 of 結末",
+        "流出": "プライベート",
+        "裏アカ": "秘密のアカウント",
+        "パパ活": "秘密の交際",
+        "ナンパ": "運命の出会い",
+        "ハプニング": "予期せぬ出来事",
+        "マジックミラー": "特殊車両",
+        "素人": "一般の女性",
+        "痴女": "積極的な女性",
+        "中出し": "愛の結末",
         "AV": "ビデオ作品",
         "アダルト": "大人向け"
     }
@@ -74,8 +75,8 @@ def fetch_fanza_item():
     print(f"[DEBUG] Final parsed API ID: {api_id}")
     print(f"[DEBUG] Final parsed Affiliate ID: {affiliate_id}")
 
-    # 背徳系キーワードリスト（「熟女」は除外）
-    keywords = ["人妻 ネトラレ", "若奥様 不倫", "団地妻 背徳", "主婦 寝取られ"]
+    # 素人・流出・ハプニング系キーワードリスト
+    keywords = ["素人 流出", "裏アカ ハプニング", "パパ活 素人", "マジックミラー ナンパ"]
     selected_keyword = random.choice(keywords)
     print(f"Searching FANZA for keyword: {selected_keyword}")
 

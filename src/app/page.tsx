@@ -96,14 +96,14 @@ export default function Home() {
       </section>
 
       {/* 検索・絞り込みパネル - 明るいグレー基調の清潔感のあるコントロールパネル */}
-      <section className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
+      <section className="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 shadow-sm space-y-4">
         
         {/* モバイル用アコーディオンヘッダー */}
         <div className="flex items-center justify-between md:hidden">
-          <span className="text-xs font-bold text-slate-300">検索フィルター</span>
+          <span className="text-xs font-bold text-slate-600">検索フィルター</span>
           <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
-            className="text-xs font-bold text-rose-400 bg-rose-500/10 px-3 py-1.5 rounded-lg border border-rose-500/20 cursor-pointer"
+            className="text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg border border-rose-100 cursor-pointer"
           >
             {isFilterOpen ? "閉じる" : "フィルターを表示"}
           </button>
@@ -113,23 +113,23 @@ export default function Home() {
         <div className={`grid grid-cols-1 md:grid-cols-4 gap-4 ${isFilterOpen ? "block" : "hidden md:grid"}`}>
           {/* 検索入力 */}
           <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">キーワード検索</label>
+            <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">キーワード検索</label>
             <input
               type="text"
               placeholder="作品名、女優、メーカー..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-rose-500 transition"
+              className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-rose-500 transition"
             />
           </div>
 
           {/* ジャンルフィルタ */}
           <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">ジャンル</label>
+            <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">ジャンル</label>
             <select
               value={selectedGenre}
               onChange={(e) => setSelectedGenre(e.target.value)}
-              className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-rose-500 transition cursor-pointer"
+              className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-rose-500 transition cursor-pointer"
             >
               {allGenres.map((g) => (
                 <option key={g} value={g}>{g}</option>
@@ -139,11 +139,11 @@ export default function Home() {
 
           {/* 女優フィルタ */}
           <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">出演女優</label>
+            <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">出演女優</label>
             <select
               value={selectedActress}
               onChange={(e) => setSelectedActress(e.target.value)}
-              className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-rose-500 transition cursor-pointer"
+              className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-rose-500 transition cursor-pointer"
             >
               {allActresses.map((act) => (
                 <option key={act} value={act}>{act}</option>
@@ -153,11 +153,11 @@ export default function Home() {
 
           {/* ラベルフィルタ */}
           <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">タグレーベル</label>
+            <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">タグレーベル</label>
             <select
               value={selectedLabel}
               onChange={(e) => setSelectedLabel(e.target.value)}
-              className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-rose-500 transition cursor-pointer"
+              className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-slate-900 focus:outline-none focus:border-rose-500 transition cursor-pointer"
             >
               {allLabels.map((lbl) => (
                 <option key={lbl} value={lbl}>{lbl}</option>
@@ -168,9 +168,9 @@ export default function Home() {
 
         {/* アクティブフィルターの状態表示 */}
         {hasActiveFilters && (
-          <div className="flex items-center justify-between text-xs pt-3 border-t border-slate-800">
-            <span className="text-slate-400">
-              該当作品: <strong className="text-rose-400">{filteredPosts.length}</strong> 件
+          <div className="flex items-center justify-between text-xs pt-3 border-t border-slate-100">
+            <span className="text-slate-500">
+              該当作品: <strong className="text-rose-600">{filteredPosts.length}</strong> 件
             </span>
             <button
               onClick={() => {
@@ -179,7 +179,7 @@ export default function Home() {
                 setSelectedActress("統括");
                 setSelectedLabel("すべて");
               }}
-              className="text-rose-400 font-bold hover:text-rose-300 cursor-pointer"
+              className="text-rose-600 font-bold hover:text-rose-500 cursor-pointer"
             >
               条件をクリア ×
             </button>
@@ -194,7 +194,7 @@ export default function Home() {
           <p className="mt-4 text-xs text-slate-400">読み込み中...</p>
         </div>
       ) : filteredPosts.length === 0 ? (
-        <div className="text-center py-20 border border-dashed border-purple-900/50 rounded-2xl bg-slate-900">
+        <div className="text-center py-20 border border-dashed border-slate-200 rounded-2xl bg-white">
           <p className="text-slate-400 text-xs">該当するレビュー記事はありません。</p>
         </div>
       ) : (
@@ -202,7 +202,7 @@ export default function Home() {
           {filteredPosts.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col rounded-2xl overflow-hidden bg-slate-900 border border-purple-900/50 card-hover-effect shadow-sm"
+              className="flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-200/80 card-hover-effect shadow-sm"
             >
               {/* アイキャッチ画像 */}
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100 flex items-center justify-center border-b border-slate-200/60">
@@ -232,11 +232,11 @@ export default function Home() {
                   <span className="text-[9px] font-bold text-slate-400 tracking-wider block">
                     {post.date}
                   </span>
-                  <h2 className="text-sm md:text-base font-extrabold leading-snug text-slate-100 hover:text-rose-400 transition-colors duration-200 line-clamp-2">
+                  <h2 className="text-sm md:text-base font-extrabold leading-snug text-slate-800 hover:text-rose-600 transition-colors duration-200 line-clamp-2">
                     {post.title}
                   </h2>
                   <div
-                    className="text-xs text-slate-300 leading-relaxed line-clamp-3 font-medium"
+                    className="text-xs text-slate-500 leading-relaxed line-clamp-3 font-medium"
                     dangerouslySetInnerHTML={{ __html: post.review }}
                   />
                 </div>
@@ -245,14 +245,14 @@ export default function Home() {
                   {/* 主要ジャンルタグ */}
                   <div className="flex flex-wrap gap-1">
                     {post.genres?.slice(0, 3).map((genre) => (
-                      <span key={genre} className="text-[9px] font-bold text-slate-300 bg-slate-800 border border-slate-700 px-2 py-0.5 rounded">
+                      <span key={genre} className="text-[9px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">
                         {genre}
                       </span>
                     ))}
                   </div>
                   <a
                     href={`/posts/${post.id}`}
-                    className="block w-full text-center text-xs font-bold text-white bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 py-2.5 rounded-xl shadow transition duration-200 cursor-pointer"
+                    className="w-full text-center text-xs font-bold text-white bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500 py-2.5 rounded-xl shadow transition duration-200 cursor-pointer"
                   >
                     考察レビューを読む
                   </a>

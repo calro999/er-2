@@ -39,10 +39,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="min-h-full flex flex-col bg-slate-950 text-slate-300 selection:bg-purple-600 selection:text-white font-sans antialiased">
+      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 selection:bg-purple-600 selection:text-white font-sans antialiased">
         
         {/* 極薄トップインフォバー */}
-        <div className="w-full text-center py-2 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 border-b border-purple-500/30 text-[10px] font-bold tracking-widest text-slate-400">
+        <div className="w-full text-center py-2 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 border-b border-purple-500/30 text-[10px] font-bold tracking-widest text-slate-200">
           FOR ADULTS ONLY • 18歳未満の閲覧は固く禁止されています
         </div>
 
@@ -53,15 +53,15 @@ export default function RootLayout({
               <span className="text-xl font-black tracking-tight text-white drop-shadow-md group-hover:text-purple-300 transition-colors">
                 バクロファイル
               </span>
-              <span className="text-[9px] font-bold tracking-widest text-slate-400 uppercase border border-purple-800/50 px-2 py-0.5 rounded-md bg-slate-900">
+              <span className="text-[9px] font-bold tracking-widest text-slate-200 uppercase border border-purple-800/50 px-2 py-0.5 rounded-md bg-slate-900">
                 AMATEUR
               </span>
             </a>
-            <nav className="flex items-center gap-5 text-xs font-bold text-slate-400">
+            <nav className="flex items-center gap-5 text-xs font-bold text-slate-200">
               <a href="/" className="hover:text-purple-300 transition">Home</a>
-              <span className="text-slate-600">/</span>
-              <a href="https://haitoku.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-rose-300 transition text-rose-500 border border-rose-500/30 px-2 py-1 rounded">姉妹サイト: 深夜書斎</a>
-              <span className="text-slate-600">/</span>
+              <span className="text-slate-400">/</span>
+              <a href="https://er-2.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-rose-300 transition text-rose-500 border border-rose-500/30 px-2 py-1 rounded">姉妹サイト: 深夜書斎</a>
+              <span className="text-slate-400">/</span>
               <span className="text-[10px] bg-purple-700 text-white font-black px-2 py-0.5 rounded">
                 R-18
               </span>
@@ -75,18 +75,18 @@ export default function RootLayout({
         </main>
 
         {/* ミニマル・モダンなフッター */}
-        <footer className="border-t border-purple-900/50 bg-slate-950 py-10 text-xs text-slate-500 shadow-inner">
+        <footer className="border-t border-purple-900/50 bg-slate-950 py-10 text-xs text-slate-300 shadow-inner">
           <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-1.5 text-center md:text-left">
-              <p className="font-bold text-slate-400">© 2026 禁断のバクロファイル. All Rights Reserved.</p>
-              <p className="text-[10px] max-w-md leading-relaxed text-slate-600">
+              <p className="font-bold text-slate-200">© 2026 禁断のバクロファイル. All Rights Reserved.</p>
+              <p className="text-[10px] max-w-md leading-relaxed text-slate-400">
                 当サイトに記載されているアフィリエイトリンクは適正に管理されており、紹介する作品はマニアが厳選した大人の作品のみです。
               </p>
             </div>
-            <div className="flex flex-wrap gap-4 text-[10px] font-bold text-slate-400 justify-center">
+            <div className="flex flex-wrap gap-4 text-[10px] font-bold text-slate-200 justify-center">
               <a href="/" className="hover:text-purple-300">ホーム</a>
               <span>•</span>
-              <a href="#" className="hover:text-rose-300 text-rose-500">姉妹サイト: 深夜書斎</a>
+              <a href="https://er-2.pages.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-rose-300 text-rose-500">姉妹サイト: 深夜書斎</a>
               <span>•</span>
               <a href="https://affiliate.dmm.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300">アフィリエイトについて</a>
             </div>

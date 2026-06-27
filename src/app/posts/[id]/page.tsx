@@ -102,7 +102,7 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
       </Link>
 
       {/* メイン詳細パネル - クリーンなホワイト基調デザイン */}
-      <div className="border border-slate-200 bg-white rounded-2xl p-6 md:p-10 shadow-sm space-y-8">
+      <div className="border border-slate-800 bg-slate-900 rounded-2xl p-6 md:p-10 shadow-sm space-y-8">
         
         {/* ヘッダー情報 */}
         <div className="space-y-3">
@@ -111,12 +111,12 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
             <span>•</span>
             <span className="text-rose-600">{post.maker || "単体作品"}</span>
           </div>
-          <h1 className="text-xl md:text-3xl font-extrabold leading-snug text-slate-800">
+          <h1 className="text-xl md:text-3xl font-extrabold leading-snug text-slate-100">
             {post.title}
           </h1>
           <div className="flex flex-wrap gap-1">
             {post.labels?.map((lbl) => (
-              <span key={lbl} className="bg-rose-50 text-rose-600 border border-rose-100 text-[9px] font-bold px-2.5 py-0.5 rounded-full">
+              <span key={lbl} className="bg-rose-500/10 text-rose-400 border border-rose-500/20 text-[9px] font-bold px-2.5 py-0.5 rounded-full">
                 #{lbl}
               </span>
             ))}
@@ -124,7 +124,7 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
         </div>
 
         {/* アートジャケット画像 */}
-        <div className="flex justify-center bg-slate-50 rounded-xl p-4 border border-slate-200/60 overflow-hidden">
+        <div className="flex justify-center bg-slate-950 rounded-xl p-4 border border-slate-800/60 overflow-hidden">
           <a href={post.affiliate_url} target="_blank" rel="noopener noreferrer" className="block relative group max-w-full">
             <img
               src={post.image}
@@ -154,7 +154,7 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
                   href={post.affiliate_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block aspect-video relative overflow-hidden rounded-lg border border-slate-200 bg-slate-100 hover:border-rose-500 transition duration-200"
+                  className="block aspect-video relative overflow-hidden rounded-lg border border-slate-800 bg-slate-950 hover:border-rose-500 transition duration-200"
                 >
                   <img
                     src={imgUrl}
@@ -170,23 +170,23 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
         )}
 
         {/* メタ情報テーブル */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200 text-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 rounded-xl bg-slate-950 border border-slate-800 text-xs">
           <div className="space-y-1">
             <span className="text-slate-400 font-bold uppercase tracking-wider block text-[9px]">出演女優</span>
-            <span className="text-slate-800 font-bold text-sm">
+            <span className="text-slate-200 font-bold text-sm">
               {post.actresses?.join("、 ") || "紹介制・単体女優"}
             </span>
           </div>
           <div className="space-y-1">
             <span className="text-slate-400 font-bold uppercase tracking-wider block text-[9px]">作品属性</span>
-            <span className="text-slate-700 font-semibold">
+            <span className="text-slate-300 font-semibold">
               {post.genres?.join("、 ") || "人妻、不倫、ネトラレ"}
             </span>
           </div>
         </div>
 
         {/* 濃厚レビューテキスト */}
-        <div className="prose prose-slate max-w-none text-slate-600 space-y-6 leading-relaxed text-sm md:text-base font-medium">
+        <div className="prose prose-invert max-w-none text-slate-300 space-y-6 leading-relaxed text-sm md:text-base font-medium">
           <div
             className="review-content-html"
             dangerouslySetInnerHTML={{ __html: post.review }}

@@ -119,7 +119,7 @@ def fetch_fanza_item():
         genres = [g.get("name", "") for g in item.get("iteminfo", {}).get("genre", [])]
         genres_str = " ".join(genres)
         
-        exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ"]
+        exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ", "ニューハーフ", "レディーボーイ", "男の娘"]
         is_excluded = False
         for word in exclude_words:
             if word in title or word in comment or word in genres_str:

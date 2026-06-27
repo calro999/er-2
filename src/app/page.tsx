@@ -252,7 +252,7 @@ export default function Home() {
                   </div>
                   <a
                     href={`/posts/${post.id}`}
-                    className="w-full text-center text-xs font-bold text-white bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500 py-2.5 rounded-xl shadow transition duration-200 cursor-pointer"
+                    className="block w-full text-center text-xs font-bold text-white bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 py-2.5 rounded-xl shadow transition duration-200 cursor-pointer"
                   >
                     考察レビューを読む
                   </a>

@@ -83,7 +83,7 @@ def fetch_fanza_items():
 
 def filter_items(items, posted_cache):
     valid_items = []
-    exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ"]
+    exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ", "ニューハーフ", "レディーボーイ", "男の娘"]
     
     for item in items:
         content_id = item.get("content_id")

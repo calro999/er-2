@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "禁断の暴露ファイル - 素人・流出・ハプニング濃厚レビュー",
+  title: "禁断のバクロファイル - 素人・流出・ハプニング濃厚レビュー",
   description: "決して覗いてはならない、素人たちの裏の顔。裏アカ、流出、ハプニング映像を徹底レビュー。あなたの本能を直撃するリアルな快感記録。マニアが厳選したお宝映像アーカイブ。",
   keywords: [
     "素人", "流出", "裏アカ", "ハプニング", "マジックミラー", "ナンパ", "パパ活", "リアル", 
@@ -50,8 +50,8 @@ export default function RootLayout({
         <header className="border-b border-purple-900/50 glass-header sticky top-0 z-50 py-3.5 px-6 shadow-sm bg-slate-950/80 backdrop-blur-md">
           <div className="max-w-6xl mx-auto flex items-center justify-between">
             <a href="/" className="flex items-center gap-2 group">
-              <span className="text-xl font-black tracking-tight bg-gradient-to-r from-slate-100 via-purple-400 to-slate-300 bg-clip-text text-transparent group-hover:opacity-90 transition">
-                暴露ファイル
+              <span className="text-xl font-black tracking-tight text-white drop-shadow-md group-hover:text-purple-300 transition-colors">
+                バクロファイル
               </span>
               <span className="text-[9px] font-bold tracking-widest text-slate-400 uppercase border border-purple-800/50 px-2 py-0.5 rounded-md bg-slate-900">
                 AMATEUR
@@ -78,7 +78,7 @@ export default function RootLayout({
         <footer className="border-t border-purple-900/50 bg-slate-950 py-10 text-xs text-slate-500 shadow-inner">
           <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-1.5 text-center md:text-left">
-              <p className="font-bold text-slate-400">© 2026 禁断の暴露ファイル. All Rights Reserved.</p>
+              <p className="font-bold text-slate-400">© 2026 禁断のバクロファイル. All Rights Reserved.</p>
               <p className="text-[10px] max-w-md leading-relaxed text-slate-600">
                 当サイトに記載されているアフィリエイトリンクは適正に管理されており、紹介する作品はマニアが厳選した大人の作品のみです。
               </p>

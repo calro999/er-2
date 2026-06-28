@@ -34,7 +34,7 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
     <div
       ref={containerRef}
       style={{ width: "300px", height: "250px" }}
-      className="flex items-center justify-center overflow-hidden bg-white/5 border border-slate-200/50 rounded shadow-sm"
+      className="overflow-hidden"
     />
   );
 }

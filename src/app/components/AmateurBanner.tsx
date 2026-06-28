@@ -22,6 +22,8 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
     iframe.style.height = "250px";
     iframe.style.border = "none";
     iframe.style.overflow = "hidden";
+    iframe.style.transform = "scale(0.9)";
+    iframe.style.transformOrigin = "top left";
     iframe.scrolling = "no";
 
     containerRef.current.appendChild(iframe);
@@ -50,8 +52,14 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
   return (
     <div
       ref={containerRef}
-      style={{ width: "300px", height: "250px" }}
-      className="overflow-hidden"
+      style={{
+        width: "270px",
+        height: "225px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "hidden"
+      }}
     />
   );
 }

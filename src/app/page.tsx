@@ -78,7 +78,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-slate-300 leading-relaxed text-xs md:text-sm max-w-md">
-            感情のゆらぎや背徳的な心理描写を丁寧に紐解く、大人のための鑑賞支援サイト。厳選された作品の深いレビューをお届けします。
+            決して覗いてはならない、素人たちの裏の顔。裏アカ、流出、ハプニング映像を徹底レビュー。あなたの本能を直撃するリアルな快感記録。マニアが厳選したお宝映像アーカイブ。
           </p>
         </div>
 

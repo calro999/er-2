@@ -76,7 +76,7 @@ def fetch_fanza_item():
     print(f"[DEBUG] Final parsed Affiliate ID: {affiliate_id}")
 
     # 素人・流出・ハプニング系キーワードリスト
-    keywords = ["素人 流出", "裏アカ ハプニング", "パパ活 素人", "マジックミラー ナンパ"]
+    keywords = ["素人", "流出", "裏アカ", "ハプニング", "パパ活", "マジックミラー", "ナンパ"]
     selected_keyword = random.choice(keywords)
     print(f"Searching FANZA for keyword: {selected_keyword}")
 

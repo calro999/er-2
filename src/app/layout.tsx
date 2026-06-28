@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import AmateurBanner from "./components/AmateurBanner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -70,9 +71,24 @@ export default function RootLayout({
         </header>
 
         {/* メインコンテンツ */}
-        <main className="flex-grow max-w-6xl w-full mx-auto px-4 py-8 md:py-12">
-          {children}
-        </main>
+        <div className="flex-grow w-full relative flex justify-center items-start">
+          {/* 左サイド追従バナー */}
+          <aside className="hidden xl:block fixed left-[calc(50%-300px-480px)] top-24 w-[300px] z-30 space-y-6">
+            <AmateurBanner affiliateId="onchan555-003" bannerId="1082_300_250" />
+            <AmateurBanner affiliateId="onchan555-003" bannerId="377_300_250" />
+          </aside>
+
+          <main className="flex-grow max-w-6xl w-full mx-auto px-4 py-8 md:py-12">
+            {children}
+          </main>
+
+          {/* 右サイド追従バナー */}
+          <aside className="hidden xl:block fixed right-[calc(50%-300px-480px)] top-24 w-[300px] z-30 space-y-6">
+            <AmateurBanner affiliateId="onchan555-002" bannerId="75_300_250" />
+            <AmateurBanner affiliateId="onchan555-003" bannerId="68_300_250" />
+          </aside>
+        </div>
+
 
         {/* ミニマル・モダンなフッター */}
         <footer className="border-t border-slate-200 bg-white py-10 text-xs text-slate-500 shadow-inner">

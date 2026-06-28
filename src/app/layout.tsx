@@ -84,7 +84,7 @@ export default function RootLayout({
           </main>
 
           {/* 右サイド追従バナー */}
-          <aside className="hidden xl:flex flex-col fixed right-4 2xl:right-[calc((100vw-1152px-270px)/2)] top-24 w-[270px] z-30 space-y-6 items-center">
+          <aside className="hidden xl:flex flex-col fixed right-4 xl:right-[calc((100vw-1152px)/4-135px)] top-24 w-[270px] z-30 space-y-6 items-center">
             <AmateurBanner affiliateId="onchan555-003" bannerId="75_300_250" />
             <AmateurBanner affiliateId="onchan555-003" bannerId="68_300_250" />
             <AmateurBanner affiliateId="onchan555-003" bannerId="1506_300_250" />

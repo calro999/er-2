@@ -1,0 +1,40 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+interface AmateurBannerProps {
+  bannerId: string;
+  affiliateId: string;
+}
+
+export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    // コンテナの中身をクリーンアップ
+    containerRef.current.innerHTML = "";
+
+    // DMMウィジェットに必要なHTML構造
+    // <ins class="widget-banner"></ins>
+    const ins = document.createElement("ins");
+    ins.className = "widget-banner";
+    containerRef.current.appendChild(ins);
+
+    // <script>タグの作成と追加
+    const script = document.createElement("script");
+    script.className = "widget-banner-script";
+    script.src = `https://widget-view.dmm.co.jp/js/banner_placement.js?affiliate_id=${affiliateId}&banner_id=${bannerId}`;
+    script.async = true;
+    containerRef.current.appendChild(script);
+  }, [bannerId, affiliateId]);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{ width: "300px", height: "250px" }}
+      className="flex items-center justify-center overflow-hidden bg-white/5 border border-slate-200/50 rounded shadow-sm"
+    />
+  );
+}

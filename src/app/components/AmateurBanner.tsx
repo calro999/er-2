@@ -18,12 +18,10 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
     // Create an iframe to isolate each banner's script execution.
     // This resolves script deduplication / execution collision when multiple identical scripts are placed.
     const iframe = document.createElement("iframe");
-    iframe.style.width = "300px";
-    iframe.style.height = "250px";
+    iframe.style.width = "270px";
+    iframe.style.height = "225px";
     iframe.style.border = "none";
     iframe.style.overflow = "hidden";
-    iframe.style.transform = "scale(0.9)";
-    iframe.style.transformOrigin = "top left";
     iframe.scrolling = "no";
 
     containerRef.current.appendChild(iframe);
@@ -36,7 +34,16 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
         <html>
         <head>
           <style>
-            body { margin: 0; padding: 0; overflow: hidden; background: transparent; }
+            html, body {
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background: transparent;
+              width: 300px;
+              height: 250px;
+              transform: scale(0.9);
+              transform-origin: top left;
+            }
           </style>
         </head>
         <body>

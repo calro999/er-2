@@ -208,6 +208,8 @@ export default function Home() {
               { affiliateId: "onchan555-003", bannerId: "377_300_250" },
               { affiliateId: "onchan555-003", bannerId: "75_300_250" },
               { affiliateId: "onchan555-003", bannerId: "68_300_250" },
+              { affiliateId: "onchan555-003", bannerId: "1980_300_250" },
+              { affiliateId: "onchan555-003", bannerId: "1506_300_250" },
             ];
 
             filteredPosts.forEach((post, index) => {

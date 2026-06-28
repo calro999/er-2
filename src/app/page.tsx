@@ -206,7 +206,7 @@ export default function Home() {
             const mobileBanners = [
               { affiliateId: "onchan555-003", bannerId: "1082_300_250" },
               { affiliateId: "onchan555-003", bannerId: "377_300_250" },
-              { affiliateId: "onchan555-002", bannerId: "75_300_250" },
+              { affiliateId: "onchan555-003", bannerId: "75_300_250" },
               { affiliateId: "onchan555-003", bannerId: "68_300_250" },
             ];
 

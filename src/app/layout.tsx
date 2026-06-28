@@ -73,7 +73,7 @@ export default function RootLayout({
         {/* メインコンテンツ */}
         <div className="flex-grow w-full relative flex justify-center items-start">
           {/* 左サイド追従バナー */}
-          <aside className="hidden xl:block fixed left-[calc(50%-300px-480px)] top-24 w-[300px] z-30 space-y-6">
+          <aside className="hidden xl:block fixed left-0 top-24 w-[300px] z-30 space-y-6">
             <AmateurBanner affiliateId="onchan555-003" bannerId="1082_300_250" />
             <AmateurBanner affiliateId="onchan555-003" bannerId="377_300_250" />
           </aside>
@@ -83,11 +83,12 @@ export default function RootLayout({
           </main>
 
           {/* 右サイド追従バナー */}
-          <aside className="hidden xl:block fixed right-[calc(50%-300px-480px)] top-24 w-[300px] z-30 space-y-6">
-            <AmateurBanner affiliateId="onchan555-002" bannerId="75_300_250" />
+          <aside className="hidden xl:block fixed right-0 top-24 w-[300px] z-30 space-y-6">
+            <AmateurBanner affiliateId="onchan555-003" bannerId="75_300_250" />
             <AmateurBanner affiliateId="onchan555-003" bannerId="68_300_250" />
           </aside>
         </div>
+
 
 
         {/* ミニマル・モダンなフッター */}

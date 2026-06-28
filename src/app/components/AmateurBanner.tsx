@@ -13,18 +13,38 @@ export default function AmateurBanner({ bannerId, affiliateId }: AmateurBannerPr
   useEffect(() => {
     if (!containerRef.current) return;
 
-    // DMMアフィリエイトウィジェット用の描画処理
     containerRef.current.innerHTML = "";
 
-    const ins = document.createElement("ins");
-    ins.className = "widget-banner";
-    containerRef.current.appendChild(ins);
+    // Create an iframe to isolate each banner's script execution.
+    // This resolves script deduplication / execution collision when multiple identical scripts are placed.
+    const iframe = document.createElement("iframe");
+    iframe.style.width = "300px";
+    iframe.style.height = "250px";
+    iframe.style.border = "none";
+    iframe.style.overflow = "hidden";
+    iframe.scrolling = "no";
 
-    const script = document.createElement("script");
-    script.className = "widget-banner-script";
-    script.src = `https://widget-view.dmm.co.jp/js/banner_placement.js?affiliate_id=${affiliateId}&banner_id=${bannerId}`;
-    script.async = true;
-    containerRef.current.appendChild(script);
+    containerRef.current.appendChild(iframe);
+
+    const doc = iframe.contentDocument || iframe.contentWindow?.document;
+    if (doc) {
+      doc.open();
+      doc.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <style>
+            body { margin: 0; padding: 0; overflow: hidden; background: transparent; }
+          </style>
+        </head>
+        <body>
+          <ins class="widget-banner"></ins>
+          <script class="widget-banner-script" src="https://widget-view.dmm.co.jp/js/banner_placement.js?affiliate_id=${affiliateId}&banner_id=${bannerId}"></script>
+        </body>
+        </html>
+      `);
+      doc.close();
+    }
   }, [bannerId, affiliateId]);
 
   return (

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "禁断のバクロファイル - 素人・流出・ハプニング濃厚レビュー",
   description: "決して覗いてはならない、素人たちの裏の顔。裏アカ、流出、ハプニング映像を徹底レビュー。あなたの本能を直撃するリアルな快感記録。マニアが厳選したお宝映像アーカイブ。",
   keywords: [
-    "素人", "流出", "裏アカ", "ハプニング", "マジックミラー", "ナンパ", "パパ活", "リアル", 
+    "素人", "流出", "裏アカ", "ハプニング", "マジックミラー", "ナンパ", "パパ活", "リアル",
     "暴露", "お宝映像", "官能", "大人向けレビュー"
   ],
   referrer: "no-referrer",
@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name="referrer" content="no-referrer" />
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-BTJKTTHLHB"
+          src="https://www.googletagmanager.com/gtag/js?id=G-C3LC7MD4BC"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -32,7 +32,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-BTJKTTHLHB');
+            gtag('config', 'G-C3LC7MD4BC');
           `}
         </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
       </head>
       <body className="min-h-full flex flex-col bg-[#f1f5f9] text-slate-900 selection:bg-rose-500 selection:text-white font-sans antialiased">
-        
+
         {/* 極薄トップインフォバー */}
         <div className="w-full text-center py-2 bg-gradient-to-r from-slate-200 via-rose-100 to-slate-200 border-b border-slate-300/60 text-[10px] font-bold tracking-widest text-slate-600">
           FOR ADULTS ONLY • 18歳未満の閲覧は固く禁止されています

@@ -98,63 +98,71 @@ def fetch_fanza_item():
 
     # 素人・流出・ハプニング系キーワードリスト
     keywords = ["素人", "流出", "裏アカ", "ハプニング", "パパ活", "マジックミラー", "ナンパ"]
-    selected_keyword = random.choice(keywords)
-    print(f"Searching FANZA for keyword: {selected_keyword}")
-
-    # 重複アイテムを避けるため、ランダムなページオフセット(1〜20)を指定
-    random_offset = random.randint(1, 20)
-    print(f"Using random offset: {random_offset}")
+    posted_cache = load_posted_cache()
 
     url = "https://api.dmm.com/affiliate/v3/ItemList"
-    params = {
-        "api_id": api_id,
-        "affiliate_id": affiliate_id,
-        "site": "FANZA",
-        "service": "digital",
-        "floor": "videoa",
-        "keyword": selected_keyword,
-        "sort": random.choice(["date", "rank"]),
-        "offset": random_offset,
-        "hits": 30, # スキップ処理のために多めに取得する
-        "output": "json"
-    }
-
-    response = requests.get(url, params=params)
-    if response.status_code != 200:
-        raise RuntimeError(f"Failed to fetch from FANZA API: {response.status_code} - {response.text}")
-
-    data = response.json()
-    items = data.get("result", {}).get("items", [])
-    if not items:
-        raise RuntimeError(f"No items found for keyword: {selected_keyword}")
-
-    posted_cache = load_posted_cache()
-    for item in items:
-        content_id = item.get("content_id")
-        if not content_id:
-            continue
-
-        # 熟女・高齢者系コンテンツの強制スキップ処理
-        title = item.get("title", "")
-        comment = item.get("comment", "")
-        genres = [g.get("name", "") for g in item.get("iteminfo", {}).get("genre", [])]
-        genres_str = " ".join(genres)
+    
+    # 確実に新しい作品を見つけるために、最大10回キーワードやオフセットを変えて検索を試行する
+    for attempt in range(10):
+        selected_keyword = random.choice(keywords)
+        selected_sort = random.choice(["date", "rank", "date"])
+        random_offset = random.randint(1, 10 + attempt * 5)
         
-        exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ", "ニューハーフ", "レディーボーイ", "男の娘"]
-        is_excluded = False
-        for word in exclude_words:
-            if word in title or word in comment or word in genres_str:
-                print(f"[SKIP] Excluding mature content (matched '{word}'): {title}")
-                is_excluded = True
-                break
+        print(f"[Attempt {attempt+1}/10] Searching FANZA. Keyword: '{selected_keyword}', Sort: '{selected_sort}', Offset: {random_offset}")
+
+        params = {
+            "api_id": api_id,
+            "affiliate_id": affiliate_id,
+            "site": "FANZA",
+            "service": "digital",
+            "floor": "videoa",
+            "keyword": selected_keyword,
+            "sort": selected_sort,
+            "offset": random_offset,
+            "hits": 30,
+            "output": "json"
+        }
+
+        try:
+            response = requests.get(url, params=params, timeout=15)
+            if response.status_code != 200:
+                print(f"API Warning: {response.status_code}")
+                continue
+
+            data = response.json()
+            items = data.get("result", {}).get("items", [])
+            if not items:
+                continue
+
+            for item in items:
+                content_id = item.get("content_id")
+                if not content_id:
+                    continue
+
+                # 熟女・高齢者系コンテンツの強制スキップ処理
+                title = item.get("title", "")
+                comment = item.get("comment", "")
+                genres = [g.get("name", "") for g in item.get("iteminfo", {}).get("genre", [])]
+                genres_str = " ".join(genres)
+                
+                exclude_words = ["熟女", "おばさん", "五十路", "四十路", "六十路", "熟年", "マダム", "高齢", "お姉さん", "ババ", "ニューハーフ", "レディーボーイ", "男の娘"]
+                is_excluded = False
+                for word in exclude_words:
+                    if word in title or word in comment or word in genres_str:
+                        is_excluded = True
+                        break
+                
+                if is_excluded:
+                    continue
+
+                if content_id not in posted_cache:
+                    print(f"-> Found new unposted item: {title} ({content_id})")
+                    return item
+        except Exception as e:
+            print(f"Request error on attempt {attempt+1}: {e}")
         
-        if is_excluded:
-            continue
+        time.sleep(1)
 
-        if content_id not in posted_cache:
-            return item
-
-    # 1件も新しいものがない場合は、エラーにせずNoneを返す（エラー終了によるGitHub Actions停止を防ぐ）
     return None
 
 def generate_article_with_llm(item):

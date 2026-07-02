@@ -9,9 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
     },
     sitemap: [
-      'https://haitoku.pages.dev/sitemap.xml',
       'https://er-2.pages.dev/sitemap.xml',
-      'https://er-3.pages.dev/sitemap.xml',
     ],
   };
 }

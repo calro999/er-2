@@ -255,10 +255,10 @@ def main():
         
         # リンク用のアフィリエイトIDをに変更
         if affiliate_url:
-            affiliate_url = affiliate_url.replace("af_id=onchan555-999", "af_id=")
+            affiliate_url = affiliate_url.replace("af_id=onchan555-999", "af_id=onchan555-007")
             api_aff_id = os.environ.get("FANZA_AFFILIATE_ID")
-            if api_aff_id and api_aff_id != "":
-                affiliate_url = affiliate_url.replace(f"af_id={api_aff_id}", "af_id=")
+            if api_aff_id and api_aff_id != "onchan555-007":
+                affiliate_url = affiliate_url.replace(f"af_id={api_aff_id}", "af_id=onchan555-007")
 
         print(f"Selected FANZA Item: {title} ({content_id})")
 

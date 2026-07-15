@@ -156,14 +156,6 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
-
-        {/* 忍者AdMax (自動広告) */}
-        <Script
-          id="ninja-admax"
-          src="https://adm.shinobi.jp/st/auto.js"
-          data-admax-id="c1ed7d2abcd8d43eef6b6e0ef324a886"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );

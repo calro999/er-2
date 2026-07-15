@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import Image from "next/image";
-import AdMax from "./AdMax";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { censorText } from "@/lib/censor";
@@ -446,10 +445,7 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
             </p>
           </section>
 
-          {/* Admax Advertisement */}
-          <div className="pt-8 text-center flex justify-center">
-            <AdMax id="c1ed7d2abcd8d43eef6b6e0ef324a886" />
-          </div>
+          {/* Admax Advertisement removed from here and placed in layout.tsx */}
         </div>
       </article>
     </>

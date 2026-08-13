@@ -520,3 +520,6 @@ snos00142
 1svmgm00047
 ipzz00778
 pred00877
+feature-kawakita-saika
+feature-nanatsumori-riri
+feature-ishikawa-mio

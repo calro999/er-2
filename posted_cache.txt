@@ -523,3 +523,6 @@ pred00877
 feature-kawakita-saika
 feature-nanatsumori-riri
 feature-ishikawa-mio
+feature-yagi-nana
+feature-asano-kokoro
+feature-murakami-yuka

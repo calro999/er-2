@@ -787,3 +787,6 @@ feature-oshima-yuka
 feature-sakura-mana
 feature-uehara-ai
 feature-kanzaki-shiori
+feature-asuka-kirara
+feature-aoi-tsukasa
+feature-shiraishi-marina

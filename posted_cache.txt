@@ -772,3 +772,6 @@ feature-hirose-yuri
 feature-nanase-arisu
 feature-kinoshita-himari
 feature-arai-rima
+feature-riri-haruka
+feature-tsujii-honoka
+feature-mori-hinako

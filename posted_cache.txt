@@ -799,3 +799,6 @@ feature-ono-rikka-v2
 feature-onodera-risa
 feature-mizutani-aoi
 feature-hinata-yuzu
+feature-toda-makoto
+feature-sunohara-miku
+feature-arimura-chika

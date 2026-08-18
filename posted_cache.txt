@@ -724,3 +724,6 @@ feature-kimura-manami
 feature-tano-yuu
 feature-kodama-nanami
 feature-nagisa-airi
+feature-sakakibara-moe
+feature-aoi-ibuki
+feature-ishihara-nozomi

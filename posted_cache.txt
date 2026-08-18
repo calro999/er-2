@@ -715,3 +715,6 @@ feature-misono-waka
 feature-shirakami-sakura
 feature-mita-marin
 feature-kiyomiya-niina
+feature-kohinata-miyuu
+feature-washio-mei
+feature-kawagoe-nico

@@ -721,3 +721,6 @@ feature-kawagoe-nico
 feature-aizawa-miyu
 feature-araki-noa
 feature-kimura-manami
+feature-tano-yuu
+feature-kodama-nanami
+feature-nagisa-airi

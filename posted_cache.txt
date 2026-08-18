@@ -706,3 +706,6 @@ hmn00890
 1fns00230
 hale00072
 406maraa00196
+feature-ono-rikka
+feature-miho-nana
+feature-kaede-fua

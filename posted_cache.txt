@@ -712,3 +712,6 @@ feature-kaede-fua
 feature-kanamatsuriho
 feature-yamagishi-ayaka
 feature-misono-waka
+feature-shirakami-sakura
+feature-mita-marin
+feature-kiyomiya-niina

@@ -739,3 +739,6 @@ feature-rukawa-rio
 ipok00033
 ipzz00705
 miab00677
+feature-miura-sakura
+feature-hatano-yui
+feature-matsumoto-ichika

@@ -745,3 +745,6 @@ feature-matsumoto-ichika
 feature-ono-yuko
 feature-fukada-eimi
 feature-mitani-akane
+feature-hongo-ai
+feature-nishimiya-yume
+feature-kuriyama-rio

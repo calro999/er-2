@@ -769,3 +769,6 @@ mikr00122
 feature-ichino-aoi
 feature-kobayakawa-reiko
 feature-hirose-yuri
+feature-nanase-arisu
+feature-kinoshita-himari
+feature-arai-rima

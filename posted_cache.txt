@@ -757,3 +757,6 @@ feature-anwi-kaoru
 feature-natsume-hibiki
 feature-takeuchi-yuki
 feature-shiraki-yuko
+feature-kazama-yumi
+feature-tomoda-maki
+feature-mizuno-asahi

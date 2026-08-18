@@ -709,3 +709,6 @@ hale00072
 feature-ono-rikka
 feature-miho-nana
 feature-kaede-fua
+feature-kanamatsuriho
+feature-yamagishi-ayaka
+feature-misono-waka

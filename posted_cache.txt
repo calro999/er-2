@@ -775,3 +775,6 @@ feature-arai-rima
 feature-riri-haruka
 feature-tsujii-honoka
 feature-mori-hinako
+feature-isshiki-momoko
+feature-kato-tsubaki
+feature-kimura-tsuna

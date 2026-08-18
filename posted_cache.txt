@@ -802,3 +802,6 @@ feature-hinata-yuzu
 feature-toda-makoto
 feature-sunohara-miku
 feature-arimura-chika
+sone00975
+pfes00120
+1favr00005

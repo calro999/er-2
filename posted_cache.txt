@@ -796,3 +796,6 @@ feature-mari-rika
 feature-ishikawa-mio-v2
 feature-yagi-nana-v2
 feature-ono-rikka-v2
+feature-onodera-risa
+feature-mizutani-aoi
+feature-hinata-yuzu

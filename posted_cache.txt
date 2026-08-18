@@ -718,3 +718,6 @@ feature-kiyomiya-niina
 feature-kohinata-miyuu
 feature-washio-mei
 feature-kawagoe-nico
+feature-aizawa-miyu
+feature-araki-noa
+feature-kimura-manami

@@ -781,3 +781,6 @@ feature-kimura-tsuna
 feature-mino-suzume
 feature-kamiki-rei-v2
 feature-adachi-yuri-v2
+feature-amami-tsubasa
+feature-hanasaki-miharu
+feature-oshima-yuka

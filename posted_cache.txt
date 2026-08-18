@@ -766,3 +766,6 @@ feature-sakura-yuno
 eyan00221
 lulu00360
 mikr00122
+feature-ichino-aoi
+feature-kobayakawa-reiko
+feature-hirose-yuri

@@ -751,3 +751,6 @@ feature-kuriyama-rio
 feature-jinguji-nao
 feature-aizawa-minami
 feature-mikami-yua
+feature-sakamichi-miru
+feature-kojima-minami
+feature-anwi-kaoru

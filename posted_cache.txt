@@ -730,3 +730,6 @@ feature-ishihara-nozomi
 1rctd00638
 h_1605stsk00201
 ekdv00776
+feature-kominato-yotsuha
+feature-nagano-ichika
+feature-furukawa-honoka

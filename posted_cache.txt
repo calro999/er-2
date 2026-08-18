@@ -754,3 +754,6 @@ feature-mikami-yua
 feature-sakamichi-miru
 feature-kojima-minami
 feature-anwi-kaoru
+feature-natsume-hibiki
+feature-takeuchi-yuki
+feature-shiraki-yuko

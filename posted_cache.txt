@@ -790,3 +790,6 @@ feature-kanzaki-shiori
 feature-asuka-kirara
 feature-aoi-tsukasa
 feature-shiraishi-marina
+feature-miura-sakura-v2
+feature-isshiki-sayuri
+feature-mari-rika

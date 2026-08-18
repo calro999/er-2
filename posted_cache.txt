@@ -748,3 +748,6 @@ feature-mitani-akane
 feature-hongo-ai
 feature-nishimiya-yume
 feature-kuriyama-rio
+feature-jinguji-nao
+feature-aizawa-minami
+feature-mikami-yua

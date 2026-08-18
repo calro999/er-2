@@ -742,3 +742,6 @@ miab00677
 feature-miura-sakura
 feature-hatano-yui
 feature-matsumoto-ichika
+feature-ono-yuko
+feature-fukada-eimi
+feature-mitani-akane

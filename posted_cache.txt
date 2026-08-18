@@ -778,3 +778,6 @@ feature-mori-hinako
 feature-isshiki-momoko
 feature-kato-tsubaki
 feature-kimura-tsuna
+feature-mino-suzume
+feature-kamiki-rei-v2
+feature-adachi-yuri-v2

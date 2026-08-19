@@ -877,3 +877,6 @@ feature-nishimiya-yume-v2
 feature-aizawa-minami-v2
 feature-mikami-yua-v2
 feature-sakamichi-miru-v2
+feature-natsume-hibiki-v2
+feature-kazama-yumi-v2
+feature-takeuchi-yuki-v2

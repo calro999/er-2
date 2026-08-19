@@ -850,3 +850,6 @@ nkwmr00028
 feature-arai-rima-v2
 feature-kato-tsubaki-v2
 feature-kimura-tsuna-v2
+feature-kinoshita-himari-v2
+feature-kobayakawa-reiko-v2
+feature-nanase-arisu-v2

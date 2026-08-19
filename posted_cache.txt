@@ -853,3 +853,6 @@ feature-kimura-tsuna-v2
 feature-kinoshita-himari-v2
 feature-kobayakawa-reiko-v2
 feature-nanase-arisu-v2
+feature-takahashi-shoko
+feature-hirose-yuri-v2
+feature-hirose-umi

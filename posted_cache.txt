@@ -856,3 +856,6 @@ feature-nanase-arisu-v2
 feature-takahashi-shoko
 feature-hirose-yuri-v2
 feature-hirose-umi
+feature-hoshino-nami
+feature-miyuki-alice
+feature-tsujimoto-an

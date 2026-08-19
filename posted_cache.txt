@@ -862,3 +862,6 @@ feature-tsujimoto-an
 feature-aso-nozomi
 feature-sayama-ai
 feature-yoshizawa-akiho
+feature-aozora-hikari
+feature-otsuki-hibiki
+feature-nagai-maria

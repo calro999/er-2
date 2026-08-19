@@ -841,3 +841,6 @@ ebwh00296
 h_565scvr00025re01
 mida00649
 pfes00121
+feature-kishi-aino
+feature-hatsukawa-minami
+feature-tachibana-satoko

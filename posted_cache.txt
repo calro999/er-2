@@ -859,3 +859,6 @@ feature-hirose-umi
 feature-hoshino-nami
 feature-miyuki-alice
 feature-tsujimoto-an
+feature-aso-nozomi
+feature-sayama-ai
+feature-yoshizawa-akiho

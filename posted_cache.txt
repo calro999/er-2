@@ -886,3 +886,6 @@ vrkm01883
 feature-sasaki-saki-v2
 feature-haruhi-moka-v2
 feature-ichino-aoi-v2
+feature-sakura-yuno-v2
+feature-kojima-minami-v2
+feature-mitani-akane-v2

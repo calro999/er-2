@@ -868,3 +868,6 @@ feature-nagai-maria
 feature-aida-nana
 feature-aine-maria
 feature-hachino-tsubasa
+feature-kuriyama-rio-v2
+feature-aizawa-miyu-v2
+feature-ono-yuko-v2

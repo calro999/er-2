@@ -883,3 +883,6 @@ feature-takeuchi-yuki-v2
 h_237clot00037
 atid00662
 vrkm01883
+feature-sasaki-saki-v2
+feature-haruhi-moka-v2
+feature-ichino-aoi-v2

@@ -847,3 +847,6 @@ feature-tachibana-satoko
 nkwmr00025
 ebwh00180
 nkwmr00028
+feature-arai-rima-v2
+feature-kato-tsubaki-v2
+feature-kimura-tsuna-v2

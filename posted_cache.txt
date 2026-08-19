@@ -865,3 +865,6 @@ feature-yoshizawa-akiho
 feature-aozora-hikari
 feature-otsuki-hibiki
 feature-nagai-maria
+feature-aida-nana
+feature-aine-maria
+feature-hachino-tsubasa

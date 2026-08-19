@@ -889,3 +889,6 @@ feature-ichino-aoi-v2
 feature-sakura-yuno-v2
 feature-kojima-minami-v2
 feature-mitani-akane-v2
+feature-anwi-kaoru-v2
+feature-misono-waka-v2
+feature-shiraami-sakura-v2

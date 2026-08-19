@@ -874,3 +874,6 @@ feature-ono-yuko-v2
 feature-fukada-eimi-v2
 feature-hongo-ai-v2
 feature-nishimiya-yume-v2
+feature-aizawa-minami-v2
+feature-mikami-yua-v2
+feature-sakamichi-miru-v2

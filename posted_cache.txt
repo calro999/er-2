@@ -934,3 +934,6 @@ sqte00719
 13dsvr01931
 snos00447
 mizd00436
+feature-toda-makoto-v2
+feature-hirose-yuri-v3
+feature-hirose-umi-v2

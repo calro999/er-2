@@ -943,3 +943,6 @@ feature-mizutani-aoi-v2
 hmn00672
 ekdv00781
 hoiz00213
+mida00042
+sone00553
+1king00358

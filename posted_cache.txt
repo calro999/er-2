@@ -937,3 +937,6 @@ mizd00436
 feature-toda-makoto-v2
 feature-hirose-yuri-v3
 feature-hirose-umi-v2
+feature-sunohara-miku-v2
+feature-arimura-chika-v2
+feature-mizutani-aoi-v2

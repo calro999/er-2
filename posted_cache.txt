@@ -940,3 +940,6 @@ feature-hirose-umi-v2
 feature-sunohara-miku-v2
 feature-arimura-chika-v2
 feature-mizutani-aoi-v2
+hmn00672
+ekdv00781
+hoiz00213

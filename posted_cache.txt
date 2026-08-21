@@ -952,3 +952,6 @@ mudr00362
 1piyo00194
 sivr00294
 hjmo00711
+feature-onodera-risa-v2
+feature-mari-rika-v2
+feature-isshiki-sayuri-v2

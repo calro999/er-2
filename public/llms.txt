@@ -10,7 +10,7 @@
 - [サイトマップ](https://er-2.pages.dev/sitemap.xml): 完全サイトマップ
 
 ## コンテンツ概要
-- 収録記事数: 1348 件
+- 収録記事数: 1356 件
 - 収録マンガレビュー数: 310 件
 - 完全詳細データセット: [llms-full.txt](https://er-2.pages.dev/llms-full.txt)
 

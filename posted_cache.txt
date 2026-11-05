@@ -2170,3 +2170,6 @@ urvrsp00618
 mimk00259
 snos00331
 dvrt00081
+pred00770
+sone00085
+hale00069
